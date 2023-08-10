@@ -1,0 +1,121 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:100vh;
+    width:100%;
+    background-color: rgb(75, 74, 74);
+    color:white;
+}
+
+.main-body{
+    max-width:655px;
+}
+
+.head h1{
+    margin:40px 0;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.new-task{
+    display:grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+input[type=text],input[type=submit],button{
+    appearance: none;
+    border:none;
+    background: none;
+    outline:none;
+}
+
+#new-task-content{
+    background-color: grey;
+    color:white;
+    height:33px;
+    border-radius: 10px;
+    font-size: 17px;
+    padding:10px;
+    cursor: pointer;
+    width:555px;
+}
+
+#new-task-add{
+    color:rgb(243, 118, 139);
+    font-size:17px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+hr{
+    margin:35px 0;
+    border:0.25px solid rgb(174, 173, 173,0.4);
+    width:100%;
+}
+
+.your-task{
+    display:flex;
+    gap:20px;
+    margin-bottom: 20px;;
+}
+
+.your-task-stats{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.your-task-status{
+    height:20px;
+    width:24px;
+    border-radius: 10px;
+    background-color: rgb(243, 118, 139);
+}
+
+
+.your-task .your-task-status:disabled{
+    background-color: grey;
+}
+
+.your-task input.your-task-content{
+    flex: 1 1 100%;
+    margin:none;
+    margin-left:20px;
+    background-color: grey;
+    color:white;
+    height:30px;
+    width:420px;
+    border-radius: 10px;
+    font-size: 17px;
+    padding:10px;
+    cursor: pointer;
+}
+
+
+.your-task-actions{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.your-task-change,.your-task-remove{
+    color:rgb(243, 118, 139);
+    font-size:17px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#new-task-add:hover,#new-task-add:focus,.your-task-change:focus,.your-task-remove:focus,.your-task-change:hover,.your-task-remove:hover{
+    color:rgb(244, 61, 91);
+}
+
+.your-task-change:disabled{
+    color:grey;
+    cursor:not-allowed;
+}
